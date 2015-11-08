@@ -20,7 +20,7 @@ power$DateTime <- dmy_hms(paste(power$Date," ",power$Time))
 
     # PLOT 4
 par(mfrow=c(2,2))  # 2 x 2 frame
-plot(power$DateTime, power$Global_active_power, type="l", ylab="Global Active Power (Kilowatts)", xlab="")
+plot(power$DateTime, power$Global_active_power, type="l", ylab="Global Active Power", xlab="")
 plot(power$DateTime, power$Voltage, type="l", ylab="Voltage", xlab="datetime")
 plot(Sub_metering_1 ~ DateTime, data = power, type = "l", ylab = "Energy sub metering", xlab="")
 lines(power$DateTime, power$Sub_metering_2, col = "red")
